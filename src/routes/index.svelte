@@ -1,7 +1,59 @@
 <script>
     import {BoxBufferGeometry, MeshStandardMaterial} from "three";
     import {Canvas, DirectionalLight, HemisphereLight, Mesh, OrbitControls, OrthographicCamera} from "threlte";
-    import LogicGate from "$components/LogicGate.svelte";
+    import Circuit from "../components/Circuit.svelte";
+    import {bottomSegment} from "../scripts/circuitLogic/DigitSegments.ts";
+    import {circuitAsState} from "../scripts/circuitLogic/CircuitUtilities.ts";
+    import DigitCircuit from "../scripts/circuitLogic/DigitCircuit.ts";
+
+    let digit = new DigitCircuit();
+    digit.updateInputsFromNumber(0);
+    $: state = digit.topRight;
+
+    setTimeout(() => {
+        digit.updateInputsFromNumber(1);
+        digit = digit;
+    }, 1000);
+
+    setTimeout(() => {
+        digit.updateInputsFromNumber(2);
+        digit = digit;
+    }, 2000);
+
+    setTimeout(() => {
+        digit.updateInputsFromNumber(3);
+        digit = digit;
+    }, 3000);
+
+    setTimeout(() => {
+        digit.updateInputsFromNumber(4);
+        digit = digit;
+    }, 4000);
+
+    setTimeout(() => {
+        digit.updateInputsFromNumber(5);
+        digit = digit;
+    }, 5000);
+
+    setTimeout(() => {
+        digit.updateInputsFromNumber(6);
+        digit = digit;
+    }, 6000);
+
+    setTimeout(() => {
+        digit.updateInputsFromNumber(7);
+        digit = digit;
+    }, 7000);
+
+    setTimeout(() => {
+        digit.updateInputsFromNumber(8);
+        digit = digit;
+    }, 8000);
+
+    setTimeout(() => {
+        digit.updateInputsFromNumber(9);
+        digit = digit;
+    }, 9000);
 </script>
 
 <div class="fixed top-0 left-0 w-full h-full">
@@ -22,10 +74,10 @@
         <Mesh
                 castShadow
                 geometry={new BoxBufferGeometry(50, 50, 50)}
+                position={{ x: 25, y: 25, z: -25 }}
                 material={new MeshStandardMaterial({ color: '#ff3e00' })}
         />
 
-        <LogicGate position={{y: 0}}/>
-        <LogicGate position={{y: 50}} charge={0.5}/>
+        <Circuit {state}/>
     </Canvas>
 </div>

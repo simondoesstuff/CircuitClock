@@ -3,6 +3,7 @@
     import {Object3DInstance} from "threlte";
     import {AndGate, NandGate, NotGate, OrGate, XorGate, NorGate, XnorGate} from "$svgs/LogicGateSvg.ts";
 
+
     export let charge = 1;
     export let type = "AND";
     export let position;
@@ -16,9 +17,6 @@
         case "NOR": return logicGateMesh(NorGate, charge);
         case "XNOR": return logicGateMesh(XnorGate, charge);
     }})();
-
-    $: console.log(object);
-
 </script>
 
 <Object3DInstance {object} {position}/>
