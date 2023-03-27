@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="40px" height="69px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g id="nand">
+        <path d="M1.875,34.226C1.939,24.158 10.133,16.004 20.216,16.004C30.338,16.004 38.556,24.222 38.556,34.344L38.556,52.685L1.875,52.685L1.875,34.344L1.875,34.226Z" style="fill:rgb(97,255,111);stroke:black;stroke-width:2px;"/>
+        <path d="M20.216,16.004L20.216,1.315" style="fill:none;stroke:black;stroke-width:2px;"/>
+        <path d="M12.018,67.373L12.018,52.685" style="fill:none;stroke:black;stroke-width:2px;"/>
+        <path d="M28.414,67.373L28.414,52.685" style="fill:none;stroke:black;stroke-width:2px;"/>
+        <circle cx="20.216" cy="12.332" r="3.672" style="fill:rgb(97,255,111);stroke:black;stroke-width:2px;"/>
+    </g>
+</svg>
